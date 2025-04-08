@@ -25,8 +25,6 @@ export default function Home() {
     fetchTickets();
   }, []);
 
-  console.log(tickets);
-
   const handleTicketCreated = (newTicket: Ticket) => {
     setTickets((prev) => [...prev, newTicket]);
   };
