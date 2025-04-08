@@ -14,4 +14,26 @@ export interface Ticket {
     skills?: string[]
     assignedTo?: string
     createdAt: string
+    designFiles?: DesignFile[]
+}
+
+export interface DesignFile {
+    id: string
+    ticketId: string
+    fileName: string
+    fileUrl: string
+    fileSize: number
+    fileType: string
+    version: number
+    uploadedAt: string
+    uploadedBy: string
+}
+
+export interface DesignFeedback {
+    id: string
+    designFileId: string
+    comment: string
+    position?: { x: number, y: number }
+    createdAt: string
+    createdBy: string
 }
