@@ -104,7 +104,7 @@ export function TicketList({ tickets, isLoading }: TicketListProps) {
               <DropdownMenu>
                 <DropdownMenuTrigger className="h-8 w-8 inline-flex items-center justify-center rounded-md hover:bg-muted focus:outline-none">
                   <MoreVertical className="h-4 w-4" />
-                  <span className="sr-only">Opções</span>
+                  <span className="sr-only">Options</span>
                 </DropdownMenuTrigger>
                 <DropdownMenuContent align="end">
                   <DropdownMenuItem
@@ -113,7 +113,7 @@ export function TicketList({ tickets, isLoading }: TicketListProps) {
                     className="text-destructive cursor-pointer"
                   >
                     <Trash className="h-4 w-4 mr-2" />
-                    Excluir ticket
+                    Delete Ticket
                   </DropdownMenuItem>
                 </DropdownMenuContent>
               </DropdownMenu>
